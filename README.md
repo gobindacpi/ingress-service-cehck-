@@ -32,8 +32,14 @@ spec:
                 name: web2
                 port:
                   number: 8080
-
+~~~
+~~~
 kubectl create -f web-ingress.yaml -n ingress-nginx
-
-
+~~~
+Then try to hit browser with "http://hello-world.info/" and "http://hello-world.info/v2" with controller Address IP  like 10.10.10.223 
+~~~
+~~~
+root@master:~# kubectl get ing -n ingress-nginx                     
+NAME              CLASS    HOSTS              ADDRESS        PORTS   AGE
+example-ingress   <none>   hello-world.info   10.10.10.223   80      34d
 ~~~
