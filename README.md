@@ -36,6 +36,7 @@ spec:
 ~~~
 kubectl create -f web-ingress.yaml -n ingress-nginx
 ~~~
+~~~
 Then try to hit browser with "http://hello-world.info/" and "http://hello-world.info/v2" with controller Address IP  like 10.10.10.223 
 ~~~
 ~~~
